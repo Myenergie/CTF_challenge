@@ -1,0 +1,17 @@
+include<stdio.h>
+
+int main() {
+    char secret_code[] = "01253{Y0u_f0und_th3_s3cr3t_c0d3}";
+    int check = 0;
+
+    printf("Enter the secret number: ");
+    scanf("%d", &check);
+
+    if(check == 1234) {
+        printf("Felicitation! le code secret est: %s\n", secret_code);
+    } else {
+        printf("Maleureusement, c'est incorrect.\n");
+    }
+
+    return 0;
+}
